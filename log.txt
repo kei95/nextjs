@@ -1,0 +1,29 @@
+
+> nextjs@4.0.0 build /Volumes/Untitled/portfolio/nextjs
+> next build
+
+info  - Creating an optimized production build...
+info  - Compiled successfully
+info  - Collecting page data...
+info  - Generating static pages (0/2)
+info  - Finalizing page optimization...
+
+Page                                                           Size     First Load JS
+┌ ○ /                                                          58.9 kB         140 kB
+├   └ css/179b3e418e31becdb526.css                             373 B
+├   /_app                                                      0 B            81.2 kB
+└ ○ /404                                                       2.71 kB        83.9 kB
++ First Load JS shared by all                                  81.2 kB
+  ├ chunks/71247caf95475e3ea7f9a0f8a30beb258b23d005.68de65.js  19.7 kB
+  ├ chunks/commons.7f79d7.js                                   11.1 kB
+  ├ chunks/framework.1d36bc.js                                 40.2 kB
+  ├ chunks/main.f5441b.js                                      6.83 kB
+  ├ chunks/pages/_app.048d31.js                                2.57 kB
+  ├ chunks/webpack.e06743.js                                   751 B
+  └ css/375e51a58e2bbaadf079.css                               1.02 kB
+
+λ  (Server)  server-side renders at runtime (uses getInitialProps or getServerSideProps)
+○  (Static)  automatically rendered as static HTML (uses no initial props)
+●  (SSG)     automatically generated as static HTML + JSON (uses getStaticProps)
+   (ISR)     incremental static regeneration (uses revalidate in getStaticProps)
+
