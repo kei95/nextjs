@@ -4,7 +4,6 @@ import React from "react";
 import BusinessIcon from "@material-ui/icons/Business";
 import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
 import SchoolIcon from "@material-ui/icons/School";
-import profile from "../public/static/img/kei.jpg";
 
 // components
 import Header from "../src/components/Header/Header.js";
@@ -36,9 +35,17 @@ export default function Index() {
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className="profile">
-                <div>
-                  <img src={profile} alt="It's me!" className="profileImage" />
-                </div>
+                <picture>
+                  <source
+                    srcSet={require("../public/static/img/kei.jpg?webp")}
+                    type="image/webp"
+                  />
+                  <img
+                    src={require("../public/static/img/kei.jpg")}
+                    alt="It's me!"
+                    className="profileImage"
+                  />
+                </picture>
                 <div className="name">
                   <h1 className="title">Keisuke Yamashita</h1>
                 </div>
