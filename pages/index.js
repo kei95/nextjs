@@ -37,7 +37,7 @@ export default function Index() {
               <div className="profile">
                 <div>
                   <img
-                    src={require("../public/static/img/Kei.jpg")}
+                    src={require("../public/static/img/kei.jpg")}
                     alt="It's me!"
                     className="profileImage"
                   />
