@@ -23,12 +23,16 @@
     "react-dom": "latest",
     "react-swipeable-views": "^0.13.9",
     "svg-sprite-loader": "^5.0.0",
-    "webp-loader": "^0.6.0"
+    "webp-loader": "^0.6.0",
+    "webpack-cli": "^4.0.0"
   },
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "node_modules/next/dist/bin/next start -p $PORT",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^3.11.0"
   }
 }
