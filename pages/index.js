@@ -4,6 +4,7 @@ import React from "react";
 import BusinessIcon from "@material-ui/icons/Business";
 import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
 import SchoolIcon from "@material-ui/icons/School";
+import profile from "../public/static/img/kei.jpg";
 
 // components
 import Header from "../src/components/Header/Header.js";
@@ -36,11 +37,7 @@ export default function Index() {
             <GridItem xs={12} sm={12} md={6}>
               <div className="profile">
                 <div>
-                  <img
-                    src={require("../public/static/img/kei.jpg")}
-                    alt="It's me!"
-                    className="profileImage"
-                  />
+                  <img src={profile} alt="It's me!" className="profileImage" />
                 </div>
                 <div className="name">
                   <h1 className="title">Keisuke Yamashita</h1>
