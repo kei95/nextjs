@@ -35,13 +35,20 @@ export default function Index() {
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className="profile">
-                <img
-                  src={require("../static/img/kei.jpg")}
-                  alt="It's me!"
-                  className="profileImage"
-                  width={192}
-                  height={192}
-                />
+                <picture>
+                  <source
+                    srcSet={require("../static/img/kei.jpg?webp")}
+                    type="image/webp"
+                    className="profileImage"
+                  />
+                  <img
+                    src={require("../static/img/kei.jpg")}
+                    alt="It's me!"
+                    className="profileImage"
+                    width={192}
+                    height={192}
+                  />
+                </picture>
                 <div className="name">
                   <h1 className="title">Keisuke Yamashita</h1>
                 </div>
