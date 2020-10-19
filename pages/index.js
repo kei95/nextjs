@@ -29,7 +29,7 @@ export default function Index() {
           color: "white",
         }}
       />
-      <Parallax image={require("../public/static/img/profile-bg.jpg")} />
+      <Parallax image={require("../static/img/profile-bg.jpg")} />
       <div className="main mainRaised">
         <div className="container">
           <GridContainer justify="center">
@@ -37,11 +37,11 @@ export default function Index() {
               <div className="profile">
                 <picture>
                   <source
-                    srcSet={require("../public/static/img/kei.jpg?webp")}
+                    srcSet={require("../static/img/kei.jpg?webp")}
                     type="image/webp"
                   />
                   <img
-                    src={require("../public/static/img/kei.jpg")}
+                    src={require("../static/img/kei.jpg")}
                     alt="It's me!"
                     className="profileImage"
                   />
