@@ -13,6 +13,7 @@ export function CardTitle({ title, titleRef, period, jobTitle }) {
           href={titleRef ?? "http://localhost:3000/profile"}
           target="_blank"
           className="cardTitle"
+          rel="noreferrer"
         >
           {jobTitle ? `${title} - ${jobTitle}` : title}
         </a>

@@ -34,6 +34,7 @@ export default function HeaderLinks() {
             href="https://github.com/kei95"
             target="_blank"
             className={classes.navLink}
+            rel="noreferrer"
           >
             <FontAwesomeIcon
               className={classes.socialIcons + " fab fa-github"}
@@ -54,6 +55,7 @@ export default function HeaderLinks() {
             href="https://www.linkedin.com/in/keisuke-yamashita-075164178/"
             target="_blank"
             className={classes.navLink}
+            rel="noreferrer"
           >
             <FontAwesomeIcon
               className={classes.socialIcons + " fab fa-linkedIn"}

@@ -37,6 +37,7 @@ function Sherwa() {
           href={"https://sherwaonline.com/"}
           target="_blank"
           className="appLinkText"
+          rel="noreferrer"
         >
           Check the app
         </a>
@@ -67,6 +68,7 @@ function DevConnector() {
           href={"https://still-shelf-78122.herokuapp.com/"}
           target="_blank"
           className="appLinkText"
+          rel="noreferrer"
         >
           Check the app
         </a>
@@ -96,6 +98,7 @@ function Base() {
           href={"https://web.base.town/"}
           target="_blank"
           className="appLinkText"
+          rel="noreferrer"
         >
           Check the app
         </a>
@@ -124,6 +127,7 @@ function NoteTaker() {
           href={"https://master.d3osctzxsg982c.amplifyapp.com/"}
           target="_blank"
           className="appLinkText"
+          rel="noreferrer"
         >
           Check the app
         </a>
