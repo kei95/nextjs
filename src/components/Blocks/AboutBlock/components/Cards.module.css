@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.cardContainer {
+  max-width: 100%;
+}
+
+.titleText {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 576px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .cardContainer {
+    max-width: 30%;
+  }
+}
