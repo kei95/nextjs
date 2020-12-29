@@ -80,11 +80,11 @@ p {
   }
 }
 
+/* ============= Fade in section's css ============= */
 .fade-in-section {
   opacity: 0;
-  transform: translateY(20vh);
   visibility: hidden;
-  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  transition: opacity 1.2s ease-out;
   will-change: opacity, visibility;
 }
 .fade-in-section.is-visible {
@@ -92,6 +92,7 @@ p {
   transform: none;
   visibility: visible;
 }
+/* ================================================= */
 
 @media only screen and (min-width: 576px) {
   .container {

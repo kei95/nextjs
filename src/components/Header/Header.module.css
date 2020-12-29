@@ -1,9 +1,10 @@
 .container {
   width: 100vw;
   background-color: #111111;
-  top: 0;
-  position: absolute;
   z-index: 1000;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 
 .innerContainer {
