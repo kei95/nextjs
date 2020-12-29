@@ -1,3 +1,85 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"); */
+
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url("/static/fonts/PlayfairDisplay-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Italic";
+  src: url("/static/fonts/PlayfairDisplay-Italic.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PlayfairDisplay-Bold";
+  src: url("/static/fonts/PlayfairDisplay-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LibreBaskerville-Regular";
+  src: url("/static/fonts/LibreBaskerville-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LibreBaskerville-Italic";
+  src: url("/static/fonts/LibreBaskerville-Italic.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "LibreBaskerville-Bold";
+  src: url("/static/fonts/LibreBaskerville-Bold.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: "PlayfairDisplay-Regular";
+}
+
+h2 {
+  font-family: "LibreBaskerville-Bold";
+}
+
+body {
+  font-family: "PlayfairDisplay-Regular";
+  color: #444444;
+  margin: 0;
+  line-height: 1.78;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+p {
+  font-family: "LibreBaskerville-Regular";
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+@media only screen and (min-width: 576px) {
+  p {
+    font-family: "LibreBaskerville-Regular";
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    max-width: calc(782px - 32px);
+  }
+}
+
 @media only screen and (min-width: 576px) {
   .container {
     display: flex;

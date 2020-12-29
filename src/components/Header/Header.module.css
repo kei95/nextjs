@@ -1,0 +1,26 @@
+.container {
+  width: 100vw;
+  background-color: #111111;
+  top: 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+.innerContainer {
+  margin: auto;
+  width: 95vw;
+  padding: 1rem 0;
+}
+
+.iconText {
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media only screen and (max-width: 576px) {
+  .innerContainer {
+    margin: auto;
+    width: 100vw;
+  }
+}

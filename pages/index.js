@@ -6,7 +6,7 @@ import ImportantDevicesIcon from "@material-ui/icons/ImportantDevices";
 import SchoolIcon from "@material-ui/icons/School";
 
 // components
-import Header from "../src/components/Header/Header.js";
+// import Header from "../src/components/Header/Header.js";
 import GridContainer from "../src/components/Grid/GridContainer.js";
 import GridItem from "../src/components/Grid/GridItem.js";
 import HeaderLinks from "../src/components/Header/HeaderLinks.js";
@@ -15,24 +15,19 @@ import Parallax from "../src/components/Parallax/Parallax.js";
 import { ExperienceCards } from "../src/components/Card/ExperienceCards";
 import { EducationCards } from "../src/components/Card/EducationCards.js";
 import { ProjectCards } from "../src/components/Card/ProjectCards.js";
+import { Header } from "../src/components/Header/Header_new.tsx";
+import { LandingBlock } from "../src/components/Blocks/LandingBlock/LandingBlock.tsx";
+import { AboutBlock } from "../src/components/Blocks/AboutBlock/AboutBlock.tsx";
 
 export default function Index() {
   return (
     <div>
-      <Header
-        color="transparent"
-        brand="Keisuke Yamashita"
-        rightLinks={<HeaderLinks />}
-        fixed
-        changeColorOnScroll={{
-          height: 200,
-          color: "white",
-        }}
-      />
-      <Parallax image={require("../static/img/profile-bg.jpg")} />
-      <div className="main mainRaised">
-        <div className="container">
-          <GridContainer justify="center">
+      <Header />
+      {/* <Parallax image={require("../static/img/profile-bg.jpg")} /> */}
+      <div className="main">
+        <LandingBlock />
+        <AboutBlock />
+        {/* <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className="profile">
                 <picture>
@@ -98,8 +93,7 @@ export default function Index() {
                 ]}
               />
             </GridItem>
-          </GridContainer>
-        </div>
+          </GridContainer> */}
       </div>
       <div className="footerBox" />
     </div>
