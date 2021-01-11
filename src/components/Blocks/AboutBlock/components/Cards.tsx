@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "./Cards.module.css";
+import styles from "./Cards.module.css";
 
 interface CardProps {
   title: string;

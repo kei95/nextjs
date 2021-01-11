@@ -1,6 +1,6 @@
 import React from "react";
-import { FadeInSection } from "../../FadeInSection/FadeInSection.tsx";
-import * as styles from "./LandingBlock.module.css";
+import { FadeInSection } from "../../FadeInSection/FadeInSection";
+import styles from "./LandingBlock.module.css";
 
 interface LandingBlockProps {}
 

@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainLine {
+  font-size: 2rem;
+  width: 100%;
+}
+
+.workContainer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.content {
+  text-align: right;
+  grid-area: 1 / 1 / -1 / 7;
+  grid-column: 7 / -1;
+  z-index: 3;
+}
+
+.contentLeft {
+  text-align: left;
+  grid-area: 1 / 1 / -1 / 7;
+  z-index: 3;
+}
+
+.descriptionBox {
+  padding: 25px;
+  border-radius: 0.5rem;
+  z-index: 3;
+  background-color: #ffffff;
+  box-shadow: 0 5px 40px -15px;
+}
+
+.title {
+  font-family: "LibreBaskerville-Regular";
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+.iconLeft {
+  padding-right: 0.8rem;
+}
+
+.image {
+  grid-area: 1 / 6 / -1 / -1;
+  grid-column: 1 / 8;
+  overflow: hidden;
+  z-index: -1;
+  box-shadow: 0 5px 30px -20px;
+  border-radius: 1rem;
+}
+
+.imageLeft {
+  grid-area: 1 / 6 / -1 / -1;
+  overflow: hidden;
+  z-index: -1;
+  border-radius: 1rem;
+}
+
+.imageInner {
+  object-fit: cover;
+  border-radius: 1rem;
+}

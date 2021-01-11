@@ -1,8 +1,8 @@
 import React from "react";
 import { FadeInSection } from "../../FadeInSection/FadeInSection.tsx";
 import { SlashSpace } from "../../SlashSpace/SlashSpace.tsx";
-import * as styles from "./AboutBlock.module.css";
-import { Cards } from "./components/Cards.tsx";
+import styles from "./AboutBlock.module.css";
+import { Cards } from "./components/Cards";
 
 interface AboutBlockProps {}
 
@@ -21,9 +21,9 @@ export const AboutBlock: React.FC<AboutBlockProps> = ({}) => {
           opportunity to contribute and improve his skills and gain experiences.
         </p>
         <p>
-          Are you looking for somebody who can make a web page for cheaper
-          price? You are in the right place. Send message to him he doesn’t bite
-          you!
+          Are you looking for somebody who can make something meaningful with
+          you? You are in the right place. Send a message to him, he doesn’t
+          bite you!
         </p>
       </FadeInSection>
       <FadeInSection>

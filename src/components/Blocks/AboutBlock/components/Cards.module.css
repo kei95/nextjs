@@ -18,9 +18,19 @@
   .container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .cardContainer {
     max-width: 30%;
   }
 }
+/* @media only screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cardContainer {
+    max-width: 30%;
+  }
+} */

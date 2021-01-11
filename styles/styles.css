@@ -71,12 +71,24 @@ p {
   margin: 1rem 0;
 }
 
+span {
+  font-family: "LibreBaskerville-Regular";
+  font-size: 0.9rem;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
 @media only screen and (min-width: 576px) {
   p {
     font-family: "LibreBaskerville-Regular";
     font-size: 1.1rem;
     margin: 2rem 0;
-    max-width: calc(782px - 32px);
+    max-width: calc(750px - 32px);
   }
 }
 
@@ -95,12 +107,8 @@ p {
 /* ================================================= */
 
 @media only screen and (min-width: 576px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 540px;
-    margin: auto;
+  .main {
+    margin: 0 1rem;
   }
   .cardContainer {
     display: inline-block;
@@ -118,38 +126,18 @@ p {
   }
 }
 @media only screen and (min-width: 768px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 720px;
-    margin: auto;
+  .main {
+    margin: 0 5rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    max-width: 960px;
-    margin: auto;
-  }
 }
-@media only screen and (min-width: 1200px) {
-  .container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+@media only screen and (min-width: 1300px) {
+  .main {
     max-width: 1140px;
     margin: auto;
   }
-}
-
-.main {
-  margin: auto;
-  background: "#FFFFFF";
-  position: relative;
-  z-index: 3;
 }
 
 .mainRaised {
