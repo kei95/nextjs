@@ -2,6 +2,7 @@ import React from "react";
 import { FadeInSection } from "../../FadeInSection/FadeInSection";
 import styles from "./WorksBlock.module.css";
 import { Content } from "./components/Content/Content";
+import { SlashSpace } from "../../SlashSpace/SlashSpace";
 
 interface WorksBlockProps {}
 

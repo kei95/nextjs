@@ -5,6 +5,7 @@ import { Header } from "../src/components/Header/Header_new.tsx";
 import { LandingBlock } from "../src/components/Blocks/LandingBlock/LandingBlock.tsx";
 import { AboutBlock } from "../src/components/Blocks/AboutBlock/AboutBlock.tsx";
 import { WorksBlock } from "../src/components/Blocks/WorksBlock/WorksBlock.tsx";
+import { GetInTouch } from "../src/components/Blocks/GetInTouch/GetInTouch";
 
 export default function Index() {
   return (
@@ -15,6 +16,7 @@ export default function Index() {
         <LandingBlock />
         <AboutBlock />
         <WorksBlock />
+        <GetInTouch />
         {/* <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className="profile">

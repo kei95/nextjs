@@ -1,0 +1,12 @@
+.container {
+  background-color: transparent;
+  border: 2px solid #444444;
+  border-radius: 0.7rem;
+  text-decoration: none;
+}
+
+.buttonText {
+  text-decoration: none;
+  margin: 0.7rem;
+  color: #444444;
+}
