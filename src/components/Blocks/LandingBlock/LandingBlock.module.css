@@ -1,24 +1,5 @@
-@media only screen and (min-width: 768px) {
-  .parallax {
-    width: 100vw;
-    min-height: 789px;
-    overflow: hidden;
-    position: relative;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    display: flex;
-    align-items: center;
-    object-fit: contain;
-    background-attachment: fixed;
-  }
-}
-
 .innerContainer {
-  padding: 0 1rem;
+  margin: auto;
   z-index: 2;
   align-items: center;
   display: flex;
@@ -27,7 +8,7 @@
 
 .parallax {
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   overflow: hidden;
   position: relative;
   background-position: center center;
@@ -53,11 +34,45 @@
 .titleText {
   font-family: "PlayfairDisplay-Bold";
   color: #ffffff;
-  font-size: 3rem;
+  font-size: 2rem;
   padding: 2rem 0;
+  text-align: center;
 }
 
 .line {
+  margin: auto;
   width: 15vw;
   border-bottom: 2px solid #e0e0e0;
+}
+
+.image {
+  width: 100vw;
+  height: 90vh;
+  object-fit: fill;
+}
+
+@media only screen and (min-width: 576px) {
+  .parallax {
+    width: 100vw;
+    min-height: 769px;
+    overflow: hidden;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    background-attachment: fixed;
+  }
+  .titleText {
+    font-family: "PlayfairDisplay-Bold";
+    color: #ffffff;
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-align: center;
+  }
 }

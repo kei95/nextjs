@@ -42,11 +42,16 @@
   font-weight: normal;
 }
 
+html {
+  background-color: #f4f1de;
+}
+
 h1 {
   font-family: "PlayfairDisplay-Regular";
 }
 
 h2 {
+  font-size: 1.6rem;
   font-family: "LibreBaskerville-Bold";
 }
 
@@ -107,6 +112,10 @@ span {
 /* ================================================= */
 
 @media only screen and (min-width: 576px) {
+  h2 {
+    font-size: 2rem;
+    font-family: "LibreBaskerville-Bold";
+  }
   .main {
     margin: 0 1rem;
   }

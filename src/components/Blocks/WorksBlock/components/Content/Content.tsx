@@ -27,7 +27,7 @@ export const Content: React.FC<ContentProps> = ({
           appLink={appLink}
           isLeft={isLeft}
         />
-        <ContentImage src={src} isLeft={isLeft} />
+        <ContentImage src={src} isLeft={isLeft} appLink={appLink} />
       </div>
     </FadeInSection>
   );

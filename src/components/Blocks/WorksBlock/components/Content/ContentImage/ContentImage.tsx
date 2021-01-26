@@ -3,9 +3,17 @@ import Image from "next/image";
 import styles from "../../../WorksBlock.module.css";
 import { ContentImageProps } from "../types/types";
 
-export const ContentImage: React.FC<ContentImageProps> = ({ src, isLeft }) => {
+export const ContentImage: React.FC<ContentImageProps> = ({
+  src,
+  isLeft,
+  appLink,
+}) => {
   return (
-    <div className={isLeft ? styles.imageLeft : styles.image}>
+    <a
+      target="_blank"
+      href={appLink}
+      className={isLeft ? `${styles.imageLeft}` : `${styles.image} `}
+    >
       <Image
         src={src}
         alt="Picture of the author"
@@ -13,6 +21,6 @@ export const ContentImage: React.FC<ContentImageProps> = ({ src, isLeft }) => {
         height={450}
         className={styles.imageInner}
       />
-    </div>
+    </a>
   );
 };

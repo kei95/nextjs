@@ -15,4 +15,5 @@ export interface ContentDescriptionProps {
 export interface ContentImageProps {
   src: string;
   isLeft?: boolean;
+  appLink: string;
 }

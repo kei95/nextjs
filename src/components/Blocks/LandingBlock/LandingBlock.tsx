@@ -1,23 +1,31 @@
+import Image from "next/image";
 import React from "react";
 import { FadeInSection } from "../../FadeInSection/FadeInSection";
 import styles from "./LandingBlock.module.css";
 
-interface LandingBlockProps {}
+interface LandingBlockProps {
+  isMobile: boolean;
+}
 
-export const LandingBlock: React.FC<LandingBlockProps> = ({}) => {
+export const LandingBlock: React.FC<LandingBlockProps> = ({ isMobile }) => {
   return (
-    <div
-      className={`${styles.parallax} ${styles.filter}`}
-      style={{
-        backgroundImage: "url(../static/img/profile-bg.jpg)",
-      }}
-    >
+    <div className={`${styles.parallax} ${styles.filter}`}>
+      <Image
+        src={
+          isMobile
+            ? "/static/img/profile-mobile.jpg"
+            : "/static/img/profile-bg.jpg"
+        }
+        alt="Landing page image"
+        layout="fill"
+        objectFit="cover"
+        quality={100}
+        priority={true}
+      />
       <div className={styles.innerContainer}>
         <FadeInSection>
           <div className={styles.line} />
-          <h1 className={styles.titleText}>
-            Take you to wherever you wanna go.
-          </h1>
+          <h1 className={styles.titleText}>Hello world.</h1>
           <div className={styles.line} />
         </FadeInSection>
       </div>

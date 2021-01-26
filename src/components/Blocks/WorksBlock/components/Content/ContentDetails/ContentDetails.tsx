@@ -9,7 +9,6 @@ export const ContentDetails: React.FC<ContentDescriptionProps> = ({
   title,
   description,
   stacks,
-  isGithubEnabled,
   githubLink,
   appLink,
   isLeft,

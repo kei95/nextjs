@@ -1,6 +1,7 @@
 import React from "react";
 import { EmailButton } from "../../CustomButtons/EmailButton";
 import { FadeInSection } from "../../FadeInSection/FadeInSection";
+import { SlashSpace } from "../../SlashSpace/SlashSpace";
 import styles from "./GetInTouch.module.css";
 
 interface GetInTouchProps {}
@@ -8,6 +9,7 @@ interface GetInTouchProps {}
 export const GetInTouch: React.FC<GetInTouchProps> = ({}) => {
   return (
     <FadeInSection>
+      <SlashSpace />
       <div className={styles.container}>
         <div className={styles.textsContainer}>
           <h2 className={styles.mainLine}>Get in touch</h2>

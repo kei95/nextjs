@@ -2,7 +2,6 @@ import React from "react";
 import { FadeInSection } from "../../FadeInSection/FadeInSection";
 import styles from "./WorksBlock.module.css";
 import { Content } from "./components/Content/Content";
-import { SlashSpace } from "../../SlashSpace/SlashSpace";
 
 interface WorksBlockProps {}
 
@@ -10,7 +9,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
   return (
     <FadeInSection>
       <div className={styles.container}>
-        <h2 className={styles.mainLine}>My works</h2>
+        <h2 className={styles.mainLine}>Works</h2>
         <Content
           title="Sherwa"
           description="An app helps gamers interact with others and use their skill to contribute to other players by coaching or playing together. The platform offers any gamer to be a mentor or match with somebody who can enjoy the game instead of using the game's random matching system so that they can avoid toxic ones."
