@@ -9,8 +9,7 @@
 
 .innerContainer {
   margin: auto;
-  width: 95vw;
-  padding: 1rem 0;
+  padding: 1rem 1rem;
 }
 
 .iconText {
@@ -19,9 +18,22 @@
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 576px) {
   .innerContainer {
     margin: auto;
-    width: 100vw;
+    padding: 1rem 1rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .innerContainer {
+    margin: auto;
+    padding: 1rem 5rem;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .innerContainer {
+    margin: auto;
+    max-width: 1140px;
   }
 }

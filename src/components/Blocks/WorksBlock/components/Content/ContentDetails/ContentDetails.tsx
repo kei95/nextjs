@@ -4,6 +4,9 @@ import { ContentDescriptionProps } from "../types/types";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Head from "next/head";
+import { config, dom } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 export const ContentDetails: React.FC<ContentDescriptionProps> = ({
   title,
@@ -15,6 +18,9 @@ export const ContentDetails: React.FC<ContentDescriptionProps> = ({
 }) => {
   return (
     <div className={isLeft ? styles.contentLeft : styles.content}>
+      <Head>
+        <style>{dom.css()}</style>
+      </Head>
       <p className={styles.title}>{title}</p>
       <div className={styles.descriptionBox}>
         <span>{description}</span>

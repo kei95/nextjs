@@ -1,5 +1,5 @@
 import React from "react";
-import * as styles from "./SlashSpace.module.css";
+import styles from "./SlashSpace.module.css";
 
 interface SlashSpaceProps {}
 

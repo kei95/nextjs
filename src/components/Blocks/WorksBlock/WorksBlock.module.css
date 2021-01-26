@@ -99,43 +99,6 @@
   border-radius: 1rem;
 }
 
-/* @media only screen and (max-width: 576px) {
-  .content {
-    text-align: left;
-    grid-area: 1 / 1 / -1 / -1;
-    z-index: 3;
-  }
-  .contentLeft {
-    text-align: left;
-    grid-area: 1 / 1 / -1 / -1;
-    z-index: 3;
-  }
-  .image {
-    grid-area: 1 / 1 / -1 / -1;
-    grid-column: 1 / 1;
-    border-radius: 1rem;
-    display: none;
-  }
-  .imageLeft {
-    grid-area: 1 / 1 / -1 / -1;
-    border-radius: 1rem;
-    display: none;
-  }
-  .descriptionBox {
-    border-radius: 0.5rem;
-    z-index: 3;
-    background-color: #ffffff;
-    background: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    box-shadow: 0 5px 40px -15px;
-  }
-  .workContainer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    align-items: center;
-    margin-bottom: 2rem;
-  }
-} */
 @media only screen and (max-width: 768px) {
   .content {
     text-align: left;

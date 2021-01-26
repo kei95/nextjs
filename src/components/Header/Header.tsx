@@ -1,6 +1,6 @@
 import React, { MouseEvent } from "react";
 
-import * as styles from "./Header.module.css";
+import styles from "./Header.module.css";
 
 interface HeaderProps {}
 
