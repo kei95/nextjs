@@ -87,6 +87,14 @@ span {
   font-size: 0.9rem;
 }
 
+.visible {
+  opacity: 1;
+}
+
+.invisible {
+  opacity: 0;
+}
+
 .main {
   display: flex;
   align-items: center;

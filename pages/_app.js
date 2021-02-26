@@ -5,6 +5,7 @@ import "../styles/styles.css";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
+  const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.
@@ -15,16 +16,17 @@ export default function MyApp(props) {
   }, []);
 
   return (
-    <React.Fragment>
+    <>
       <Head>
         <title>Kei's portfolio</title>
         <meta
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
+        <link rel="shortcut icon" href="../static/icon/favicon.ico" />
       </Head>
       <Component {...pageProps} />
-    </React.Fragment>
+    </>
   );
 }
 

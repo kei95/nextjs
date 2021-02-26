@@ -14,7 +14,7 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
     });
     observer.observe(domRef.current);
 
-    return () => observer.unobserve(domRef.current);
+    return () => domRef?.current && observer.unobserve(domRef.current);
   }, []);
   return (
     <div
