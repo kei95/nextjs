@@ -18,13 +18,22 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           src={"/static/img/sherwa.png"}
         />
         <Content
+          title="Ggrks Bot"
+          description="A bot for a chat app called Line(Yes popular in JP). A user can google or share search results in a group chat without closing the app. It's convenient when you want to share something via google. Made with Node.js"
+          stacks="Node.js"
+          appLink={
+            "https://timeline.line.me/user/_dQvW0IfEfrPs4i8K4nVibQ-6M_eLkejJr86KP6Q?utm_medium=osx&utm_source=desktop&utm_campaign=OA_Profile"
+          }
+          src={"/static/img/ggrksBot.jpg"}
+          isLeft={true}
+        />
+        <Content
           title="Dev connector"
           description="A brief social web application made to practice full-stack development. Users can create an account, post thoughts, add a comment and like on it. Used Node.js, Mongo DB for server-side and React, Redux and SCSS for front-end. Deployed by Heroku."
           stacks="React, TypeScript, Redux, Node.js, Mongo DB"
           appLink={"https://still-shelf-78122.herokuapp.com"}
           githubLink={"https://github.com/kei95/DevShowcase"}
           src={"/static/img/devConnector.png"}
-          isLeft={true}
         />
         <Content
           title="Base"
@@ -32,6 +41,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           stacks="React Native, React, TypeScript, Bootstrap"
           appLink={"https://web.base.town"}
           src={"/static/img/base.png"}
+          isLeft={true}
         />
       </div>
     </FadeInSection>
