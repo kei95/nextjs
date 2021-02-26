@@ -16,7 +16,7 @@ export const ContentImage: React.FC<ContentImageProps> = ({
     >
       <Image
         src={src}
-        alt="Picture of the author"
+        alt="Picture of the work"
         width={700}
         height={450}
         className={styles.imageInner}

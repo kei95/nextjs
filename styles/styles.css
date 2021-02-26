@@ -5,6 +5,7 @@
   src: url("/static/fonts/PlayfairDisplay-Regular.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
   src: url("/static/fonts/PlayfairDisplay-Italic.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -19,6 +21,7 @@
   src: url("/static/fonts/PlayfairDisplay-Bold.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -26,6 +29,7 @@
   src: url("/static/fonts/LibreBaskerville-Regular.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -33,6 +37,7 @@
   src: url("/static/fonts/LibreBaskerville-Italic.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -40,6 +45,7 @@
   src: url("/static/fonts/LibreBaskerville-Bold.ttf");
   font-style: normal;
   font-weight: normal;
+  font-display: swap;
 }
 
 html {
