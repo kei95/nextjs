@@ -12,7 +12,7 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => setVisible(entry.isIntersecting));
     });
-    observer.observe(domRef.current);
+    domRef?.current && observer.observe(domRef.current);
 
     return () => domRef?.current && observer.unobserve(domRef.current);
   }, []);

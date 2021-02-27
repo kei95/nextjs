@@ -5,7 +5,7 @@ import { FadeInSection } from "../FadeInSection/FadeInSection";
 
 interface LoadingProps {}
 
-export const Loading: React.FC<LoadingProps> = ({}) => {
+export const Loading: React.FC<LoadingProps> = () => {
   return (
     <div className={styles.body}>
       <FadeInSection>
