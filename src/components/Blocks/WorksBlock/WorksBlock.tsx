@@ -13,7 +13,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
         <Content
           title="Sherwa"
           description="An app helps gamers interact with others and use their skill to contribute to other players by coaching or playing together. The platform offers any gamer to be a mentor or match with somebody who can enjoy the game instead of using the game's random matching system so that they can avoid toxic ones."
-          stacks="React Native, TypeScript, Redux"
+          stacks="React Native, TypeScript, Redux, Node.js, PostgreSQL"
           appLink={"https://sherwaonline.com"}
           src={"/static/img/sherwa.png"}
         />
