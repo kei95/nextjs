@@ -8,14 +8,22 @@
 }
 
 .innerContainer {
+  display: flex;
   margin: auto;
   padding: 1rem 1rem;
+  justify-content: space-between;
 }
 
 .iconText {
   color: #ffffff;
   font-size: 1rem;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.icon {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-right: 1.3rem;
 }
 
 @media only screen and (min-width: 576px) {

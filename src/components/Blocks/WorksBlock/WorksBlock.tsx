@@ -25,6 +25,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
             "https://timeline.line.me/user/_dQvW0IfEfrPs4i8K4nVibQ-6M_eLkejJr86KP6Q?utm_medium=osx&utm_source=desktop&utm_campaign=OA_Profile"
           }
           src={"/static/img/ggrksBot.jpg"}
+          githubLink={"https://github.com/kei95/ggrks-bot"}
           isLeft={true}
         />
         <Content
