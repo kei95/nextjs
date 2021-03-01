@@ -6,7 +6,6 @@ import { LandingBlock } from "../src/components/Blocks/LandingBlock/LandingBlock
 import { AboutBlock } from "../src/components/Blocks/AboutBlock/AboutBlock";
 import { WorksBlock } from "../src/components/Blocks/WorksBlock/WorksBlock";
 import { GetInTouch } from "../src/components/Blocks/GetInTouch/GetInTouch";
-import { Loading } from "../src/components/Loading/Loading";
 
 export default function Index({ userAgent }) {
   const [loading, setLoading] = useState(true);
@@ -17,32 +16,29 @@ export default function Index({ userAgent }) {
   );
 
   useEffect(() => {
-    const end = () => {
+    const showSplash = () => {
       setTimeout(() => {
         setLoading(false);
       }, 2000);
     };
-    window.addEventListener("load", end);
-    return () => {
-      window.addEventListener("load", end);
-    };
+    showSplash();
   }, []);
 
   return (
     <div>
-      {loading ? (
-        <Loading />
-      ) : (
-        <>
+      <>
+        <div className="main">
           <Header />
-          <div className="main">
-            <LandingBlock isMobile={isMobile} />
-            <AboutBlock />
-            <WorksBlock />
-            <GetInTouch />
-          </div>
-        </>
-      )}
+          <LandingBlock loading={loading} isMobile={isMobile} />
+          {!loading && (
+            <>
+              <AboutBlock />
+              <WorksBlock />
+              <GetInTouch />
+            </>
+          )}
+        </div>
+      </>
     </div>
   );
 }

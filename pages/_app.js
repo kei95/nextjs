@@ -5,7 +5,6 @@ import "../styles/styles.css";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
-  const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
     // Remove the server-side injected CSS.

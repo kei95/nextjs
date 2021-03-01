@@ -1,21 +1,20 @@
 import Image from "next/image";
-import React, { useState } from "react";
-import { FadeInSection } from "../../FadeInSection/FadeInSection";
+import React from "react";
+import { Loading } from "../../Loading/Loading";
 import styles from "./LandingBlock.module.css";
 
 interface LandingBlockProps {
   isMobile: boolean;
+  loading: boolean;
 }
 
-export const LandingBlock: React.FC<LandingBlockProps> = ({ isMobile }) => {
-  const [isLoadingImage, setIsLoadingImage] = useState(true);
-
-  const onFinishLoading = () => {
-    setIsLoadingImage(false);
-  };
-
+export const LandingBlock: React.FC<LandingBlockProps> = ({
+  isMobile,
+  loading,
+}) => {
   return (
     <div className={`${styles.parallax} ${styles.filter}`}>
+      {loading && <Loading loading={loading} />}
       <Image
         src={
           isMobile
@@ -25,19 +24,16 @@ export const LandingBlock: React.FC<LandingBlockProps> = ({ isMobile }) => {
         alt="Landing page image"
         layout="fill"
         objectFit="cover"
-        quality={100}
+        quality={80}
         priority={true}
         loading={"eager"}
-        onLoad={onFinishLoading}
       />
       <div className={styles.innerContainer}>
-        {!isLoadingImage && (
-          <FadeInSection>
-            <div className={styles.line} />
-            <h1 className={styles.titleText}>Hello world.</h1>
-            <div className={styles.line} />
-          </FadeInSection>
-        )}
+        <div className={`fade-in-section ${!loading ? "is-visible" : ""}`}>
+          <div className={styles.line} />
+          <h1 className={styles.titleText}>Hello world.</h1>
+          <div className={styles.line} />
+        </div>
       </div>
     </div>
   );

@@ -1,14 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./Loading.module.css";
 import Image from "next/image";
-import { FadeInSection } from "../FadeInSection/FadeInSection";
 
-interface LoadingProps {}
+interface LoadingProps {
+  loading: boolean;
+}
 
 export const Loading: React.FC<LoadingProps> = () => {
+  const [showLogo, setShowLogo] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowLogo(true);
+    }, 100);
+  }, []);
   return (
     <div className={styles.body}>
-      <FadeInSection>
+      <div className={`fade-in-section ${showLogo ? "is-visible" : ""}`}>
         <div className={styles.innerBody}>
           <Image
             src={require("../../../static/img/logo.png")}
@@ -17,7 +25,7 @@ export const Loading: React.FC<LoadingProps> = () => {
             height={70}
           />
         </div>
-      </FadeInSection>
+      </div>
     </div>
   );
 };

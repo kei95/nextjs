@@ -88,11 +88,11 @@ span {
 }
 
 .visible {
-  opacity: 1;
+  visibility: visible;
 }
 
 .invisible {
-  opacity: 0;
+  visibility: hidden;
 }
 
 .main {
