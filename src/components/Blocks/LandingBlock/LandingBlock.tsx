@@ -14,7 +14,7 @@ export const LandingBlock: React.FC<LandingBlockProps> = ({
 }) => {
   return (
     <div className={`${styles.parallax} ${styles.filter}`}>
-      {loading && <Loading loading={loading} />}
+      <Loading loading={loading} />
       <Image
         src={
           isMobile

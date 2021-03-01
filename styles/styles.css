@@ -120,8 +120,9 @@ span {
 }
 .fade-in-section.is-visible {
   opacity: 1;
-  transform: none;
   visibility: visible;
+  transition: opacity 1.2s ease-in;
+  will-change: opacity, visibility;
 }
 /* ================================================= */
 

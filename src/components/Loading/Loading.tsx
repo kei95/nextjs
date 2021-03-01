@@ -6,7 +6,7 @@ interface LoadingProps {
   loading: boolean;
 }
 
-export const Loading: React.FC<LoadingProps> = () => {
+export const Loading: React.FC<LoadingProps> = ({ loading }) => {
   const [showLogo, setShowLogo] = useState(false);
 
   useEffect(() => {
@@ -14,8 +14,13 @@ export const Loading: React.FC<LoadingProps> = () => {
       setShowLogo(true);
     }, 100);
   }, []);
+
   return (
-    <div className={styles.body}>
+    <div
+      className={`fade-in-section ${loading ? "is-visible" : ""} ${
+        styles.body
+      } `}
+    >
       <div className={`fade-in-section ${showLogo ? "is-visible" : ""}`}>
         <div className={styles.innerBody}>
           <Image
