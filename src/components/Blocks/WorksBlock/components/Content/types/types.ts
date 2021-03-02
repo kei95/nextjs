@@ -8,7 +8,8 @@ export interface ContentDescriptionProps {
   stacks: string;
   isGithubEnabled?: boolean;
   githubLink?: string;
-  appLink: string;
+  appLink?: string;
+  androidLink?:string;
   isLeft?: boolean;
 }
 

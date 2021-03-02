@@ -18,6 +18,17 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           src={"/static/img/sherwa.png"}
         />
         <Content
+          title="Guess Game"
+          description="A simple offline game app for iOS and Android. It's a guessing game that users guess a randomly selected number. It requires only one device to play with multiple players so it's a good fit for a party-like occasion. Made with React Native. Currently reviewed by Apple."
+          stacks="React Native"
+          androidLink={
+            "https://play.google.com/store/apps/details?id=com.kei95.guessgame"
+          }
+          src={"/static/img/guessGame.jpg"}
+          githubLink={"https://github.com/kei95/Guess-game"}
+          isLeft={true}
+        />
+        <Content
           title="Ggrks Bot"
           description="A bot for a chat app called Line(Yes popular in JP). A user can google or share search results in a group chat without closing the app. It's convenient when you want to share something via google. Made with Node.js"
           stacks="Node.js"
@@ -26,7 +37,6 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           }
           src={"/static/img/ggrksBot.jpg"}
           githubLink={"https://github.com/kei95/ggrks-bot"}
-          isLeft={true}
         />
         <Content
           title="Dev connector"
@@ -35,6 +45,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           appLink={"https://still-shelf-78122.herokuapp.com"}
           githubLink={"https://github.com/kei95/DevShowcase"}
           src={"/static/img/devConnector.png"}
+          isLeft={true}
         />
         <Content
           title="Base"
@@ -42,7 +53,6 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           stacks="React Native, React, TypeScript, Bootstrap"
           appLink={"https://web.base.town"}
           src={"/static/img/base.png"}
-          isLeft={true}
         />
       </div>
     </FadeInSection>

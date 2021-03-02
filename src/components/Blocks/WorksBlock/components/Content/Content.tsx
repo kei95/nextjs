@@ -12,6 +12,7 @@ export const Content: React.FC<ContentProps> = ({
   isGithubEnabled,
   githubLink,
   appLink,
+  androidLink,
   src,
   isLeft,
 }) => {
@@ -25,6 +26,7 @@ export const Content: React.FC<ContentProps> = ({
           isGithubEnabled={isGithubEnabled}
           githubLink={githubLink}
           appLink={appLink}
+          androidLink={androidLink}
           isLeft={isLeft}
         />
         <ContentImage src={src} isLeft={isLeft} appLink={appLink} />
