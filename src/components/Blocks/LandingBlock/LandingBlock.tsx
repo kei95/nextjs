@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Loading } from "../../Loading/Loading";
 import styles from "./LandingBlock.module.css";
 
@@ -12,9 +12,18 @@ export const LandingBlock: React.FC<LandingBlockProps> = ({
   isMobile,
   loading,
 }) => {
+  const [isShowLoading, setIsShowLoading] = useState(true);
+  useEffect(() => {
+    if (!loading) {
+      setTimeout(() => {
+        setIsShowLoading(false);
+      }, 1000);
+    }
+  }, [loading]);
+
   return (
     <div className={`${styles.parallax} ${styles.filter}`}>
-      <Loading loading={loading} />
+      {isShowLoading && <Loading loading={loading} />}
       <Image
         src={
           isMobile
