@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Head from "next/head";
 import "../styles/styles.css";
+import { dom } from "@fortawesome/fontawesome-svg-core";
 
 export default function MyApp(props) {
   const { Component, pageProps } = props;
@@ -23,6 +24,7 @@ export default function MyApp(props) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
         <link rel="shortcut icon" href="../static/icon/favicon.ico" />
+        <style>{dom.css()}</style>
       </Head>
       <Component {...pageProps} />
     </>

@@ -2,10 +2,10 @@ import React from "react";
 import styles from "../../WorksBlock.module.css";
 import { ContentImage } from "./ContentImage/ContentImage";
 import { ContentDetails } from "./ContentDetails/ContentDetails";
-import { ContentProps } from "./types/types";
+import { ContentDescriptionProps } from "./types/types";
 import { FadeInSection } from "../../../../FadeInSection/FadeInSection";
 
-export const Content: React.FC<ContentProps> = ({
+export const Content: React.FC<ContentDescriptionProps> = ({
   title,
   description,
   stacks,

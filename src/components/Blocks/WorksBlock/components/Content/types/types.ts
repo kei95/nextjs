@@ -1,7 +1,3 @@
-export interface ContentProps
-  extends ContentDescriptionProps,
-    ContentImageProps {}
-
 export interface ContentDescriptionProps {
   title: string;
   description: string;
@@ -9,8 +5,9 @@ export interface ContentDescriptionProps {
   isGithubEnabled?: boolean;
   githubLink?: string;
   appLink?: string;
-  androidLink?:string;
+  androidLink?: string;
   isLeft?: boolean;
+  src?: string;
 }
 
 export interface ContentImageProps {
