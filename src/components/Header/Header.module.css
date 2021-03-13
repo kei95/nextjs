@@ -26,6 +26,19 @@
   margin-right: 1.3rem;
 }
 
+.switchBody {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.darkModeIcon {
+  margin-left: 0.4rem;
+}
+
+.lightModeIcon {
+  margin-left: 0.6rem;
+}
+
 @media only screen and (min-width: 576px) {
   .innerContainer {
     margin: auto;

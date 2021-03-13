@@ -35,6 +35,16 @@
   z-index: 3;
   background-color: #ffffff;
   box-shadow: 0 5px 40px -15px;
+  transition: all 0.5s linear;
+}
+
+.descriptionBoxDarkMode {
+  padding: 25px;
+  border-radius: 0.5rem;
+  z-index: 3;
+  background-color: #363537;
+  border: #ffffff solid 0.5px;
+  transition: all 0.5s linear;
 }
 
 .title {

@@ -5,6 +5,7 @@ import { faGithub, faAndroid } from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { config } from "@fortawesome/fontawesome-svg-core";
+import useDarkMode from "use-dark-mode";
 config.autoAddCss = false;
 
 export const ContentDetails: React.FC<ContentDescriptionProps> = ({
@@ -16,10 +17,17 @@ export const ContentDetails: React.FC<ContentDescriptionProps> = ({
   androidLink,
   isLeft,
 }) => {
+  const isDarkMode = useDarkMode();
   return (
     <div className={isLeft ? styles.contentLeft : styles.content}>
       <p className={styles.title}>{title}</p>
-      <div className={styles.descriptionBox}>
+      <div
+        className={
+          isDarkMode.value
+            ? styles.descriptionBoxDarkMode
+            : styles.descriptionBox
+        }
+      >
         <span>{description}</span>
       </div>
       <div>
@@ -28,12 +36,20 @@ export const ContentDetails: React.FC<ContentDescriptionProps> = ({
       <div>
         {githubLink && (
           <a target="_blank" href={githubLink} className={styles.iconLeft}>
-            <FontAwesomeIcon size="lg" icon={faGithub} color="#444444" />
+            <FontAwesomeIcon
+              size="lg"
+              icon={faGithub}
+              color={isDarkMode.value ? "#fff" : "#444444"}
+            />
           </a>
         )}
         {androidLink && (
           <a target="_blank" href={androidLink} className={styles.iconLeft}>
-            <FontAwesomeIcon size="lg" icon={faAndroid} color="#444444" />
+            <FontAwesomeIcon
+              size="lg"
+              icon={faAndroid}
+              color={isDarkMode.value ? "#fff" : "#444444"}
+            />
           </a>
         )}
         {appLink && (
@@ -41,7 +57,7 @@ export const ContentDetails: React.FC<ContentDescriptionProps> = ({
             <FontAwesomeIcon
               size="lg"
               icon={faExternalLinkAlt}
-              color="#444444"
+              color={isDarkMode.value ? "#fff" : "#444444"}
             />
           </a>
         )}

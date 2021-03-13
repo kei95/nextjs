@@ -21,7 +21,10 @@
     "react": "latest",
     "react-dom": "latest",
     "react-swipeable-views": "^0.13.9",
+    "react-switch": "^6.0.0",
+    "styled-components": "^5.2.1",
     "svg-sprite-loader": "^5.0.0",
+    "use-dark-mode": "^2.3.1",
     "webp-loader": "^0.6.0",
     "webpack-cli": "^4.0.0"
   },

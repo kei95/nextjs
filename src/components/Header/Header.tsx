@@ -4,6 +4,7 @@ import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import styles from "./Header.module.css";
 import { Icon } from "./components/Icon";
+import { ThemeSwitch } from "./components/ThemeSwitch";
 
 interface HeaderProps {}
 
@@ -26,6 +27,7 @@ export const Header: React.FC<HeaderProps> = ({}) => {
           />
           <Icon href="https://github.com/kei95" icon={faGithub} />
           <Icon href="../../static/img/CV.pdf" icon={faFile} isLastIcon />
+          <ThemeSwitch />
         </div>
       </div>
     </div>
