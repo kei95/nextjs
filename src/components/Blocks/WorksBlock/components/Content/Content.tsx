@@ -12,6 +12,7 @@ export const Content: React.FC<ContentDescriptionProps> = ({
   isGithubEnabled,
   githubLink,
   appLink,
+  iOSLink,
   androidLink,
   src,
   isLeft,
@@ -25,6 +26,7 @@ export const Content: React.FC<ContentDescriptionProps> = ({
           stacks={stacks}
           isGithubEnabled={isGithubEnabled}
           githubLink={githubLink}
+          iOSLink={iOSLink}
           appLink={appLink}
           androidLink={androidLink}
           isLeft={isLeft}

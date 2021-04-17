@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "../../../WorksBlock.module.css";
 import { ContentDescriptionProps } from "../types/types";
-import { faGithub, faAndroid } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faAndroid,
+  faApple,
+} from "@fortawesome/free-brands-svg-icons";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { config } from "@fortawesome/fontawesome-svg-core";
@@ -14,6 +18,7 @@ export const ContentDetails: React.FC<ContentDescriptionProps> = ({
   stacks,
   githubLink,
   appLink,
+  iOSLink,
   androidLink,
   isLeft,
 }) => {
@@ -39,6 +44,15 @@ export const ContentDetails: React.FC<ContentDescriptionProps> = ({
             <FontAwesomeIcon
               size="lg"
               icon={faGithub}
+              color={isDarkMode.value ? "#fff" : "#444444"}
+            />
+          </a>
+        )}
+        {iOSLink && (
+          <a target="_blank" href={iOSLink} className={styles.iconLeft}>
+            <FontAwesomeIcon
+              size="lg"
+              icon={faApple}
               color={isDarkMode.value ? "#fff" : "#444444"}
             />
           </a>

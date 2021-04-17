@@ -24,6 +24,9 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           androidLink={
             "https://play.google.com/store/apps/details?id=com.kei95.guessgame"
           }
+          iOSLink={
+            "https://apps.apple.com/ca/app/number-guess-game/id1563047627"
+          }
           src={"/static/img/guessGame.jpg"}
           githubLink={"https://github.com/kei95/Guess-game"}
           isLeft={true}

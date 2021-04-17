@@ -5,6 +5,7 @@ export interface ContentDescriptionProps {
   isGithubEnabled?: boolean;
   githubLink?: string;
   appLink?: string;
+  iOSLink?: string;
   androidLink?: string;
   isLeft?: boolean;
   src?: string;

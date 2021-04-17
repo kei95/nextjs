@@ -15,7 +15,7 @@ export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({}) => {
         onChange={isDarkMode.toggle}
         checked={isDarkMode.value}
         onColor={"#363537"}
-        offColor={"#F4F1DE"}
+        offColor={"#363537"}
         checkedIcon={<span className={styles.lightModeIcon}>🌙</span>}
         uncheckedIcon={<span className={styles.darkModeIcon}>🌞</span>}
       />
