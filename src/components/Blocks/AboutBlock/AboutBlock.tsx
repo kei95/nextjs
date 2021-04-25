@@ -2,7 +2,6 @@ import React from "react";
 import { FadeInSection } from "../../FadeInSection/FadeInSection";
 import { SlashSpace } from "../../SlashSpace/SlashSpace";
 import styles from "./AboutBlock.module.css";
-import { Cards } from "./components/Cards";
 
 interface AboutBlockProps {}
 
@@ -22,8 +21,7 @@ export const AboutBlock: React.FC<AboutBlockProps> = ({}) => {
         </p>
         <p>
           Are you looking for somebody who can make something amazing with? You
-          are in the right place. Feel free to send a message me. I won't bite
-          you!
+          are in the right place. Feel free to send a message me!
         </p>
       </FadeInSection>
       <SlashSpace />

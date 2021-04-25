@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import { Header } from "../src/components/Header/Header";
 import { LandingBlock } from "../src/components/Blocks/LandingBlock/LandingBlock";
 import { AboutBlock } from "../src/components/Blocks/AboutBlock/AboutBlock";
+import { ExperiencesBlock } from "../src/components/Blocks/ExperiencesBlock/ExperiencesBlock";
 import { WorksBlock } from "../src/components/Blocks/WorksBlock/WorksBlock";
 import { GetInTouch } from "../src/components/Blocks/GetInTouch/GetInTouch";
 
@@ -33,6 +34,7 @@ export default function Index({ userAgent }) {
           {!loading && (
             <>
               <AboutBlock />
+              <ExperiencesBlock />
               <WorksBlock />
               <GetInTouch />
             </>
