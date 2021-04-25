@@ -21,6 +21,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           title="Guess Game"
           description="A simple offline game app for iOS and Android. It's a guessing game that users guess a randomly selected number. It requires only one device to play with multiple players so it's a good fit for a party-like occasion. Made with React Native. Currently reviewed by Apple."
           stacks="React Native"
+          appLink="https://github.com/kei95/Guess-game"
           androidLink={
             "https://play.google.com/store/apps/details?id=com.kei95.guessgame"
           }
