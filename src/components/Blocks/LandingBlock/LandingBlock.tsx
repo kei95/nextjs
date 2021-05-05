@@ -27,8 +27,8 @@ export const LandingBlock: React.FC<LandingBlockProps> = ({
       <Image
         src={
           isMobile
-            ? "/static/img/profile-mobile.jpg"
-            : "/static/img/profile-bg.jpg"
+            ? "/static/img/profile-mobile.webp"
+            : "/static/img/profile-bg.webp"
         }
         alt="Landing page image"
         layout="fill"

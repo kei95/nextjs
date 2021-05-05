@@ -15,7 +15,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           description="An app helps gamers interact with others and use their skill to contribute to other players by coaching or playing together. The platform offers any gamer to be a mentor or match with somebody who can enjoy the game instead of using the game's random matching system so that they can avoid toxic ones."
           stacks="React Native, TypeScript, Redux, Node.js, PostgreSQL"
           appLink={"https://sherwaonline.com"}
-          src={"/static/img/sherwa.png"}
+          src={"/static/img/sherwa.webp"}
         />
         <Content
           title="Guess Game"
@@ -28,7 +28,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           iOSLink={
             "https://apps.apple.com/ca/app/number-guess-game/id1563047627"
           }
-          src={"/static/img/guessGame.jpg"}
+          src={"/static/img/guessGame.webp"}
           githubLink={"https://github.com/kei95/Guess-game"}
           isLeft={true}
         />
@@ -39,7 +39,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           appLink={
             "https://timeline.line.me/user/_dQvW0IfEfrPs4i8K4nVibQ-6M_eLkejJr86KP6Q?utm_medium=osx&utm_source=desktop&utm_campaign=OA_Profile"
           }
-          src={"/static/img/ggrksBot.jpg"}
+          src={"/static/img/ggrksBot.webp"}
           githubLink={"https://github.com/kei95/ggrks-bot"}
         />
         <Content
@@ -48,7 +48,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           stacks="React, TypeScript, Redux, Node.js, Mongo DB"
           appLink={"https://still-shelf-78122.herokuapp.com"}
           githubLink={"https://github.com/kei95/DevShowcase"}
-          src={"/static/img/devConnector.png"}
+          src={"/static/img/devConnector.webp"}
           isLeft={true}
         />
         <Content
@@ -56,7 +56,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           description="Scalable software that is offered to around 1,000 users using React (JavaScript/TypeScript), React Native (TypeScript), HTML5 and CSS/Bootstrap."
           stacks="React Native, React, TypeScript, Bootstrap"
           appLink={"https://web.base.town"}
-          src={"/static/img/base.png"}
+          src={"/static/img/base.webp"}
         />
       </div>
     </FadeInSection>
