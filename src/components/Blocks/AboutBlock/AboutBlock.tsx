@@ -7,7 +7,7 @@ interface AboutBlockProps {}
 
 export const AboutBlock: React.FC<AboutBlockProps> = ({}) => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container} id="about">
       <FadeInSection>
         <h2 className={styles.mainLine}>Welcome to Kei's page</h2>
         <p>
@@ -25,6 +25,6 @@ export const AboutBlock: React.FC<AboutBlockProps> = ({}) => {
         </p>
       </FadeInSection>
       <SlashSpace />
-    </div>
+    </section>
   );
 };

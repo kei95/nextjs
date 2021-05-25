@@ -22,7 +22,7 @@ export const LandingBlock: React.FC<LandingBlockProps> = ({
   }, [loading]);
 
   return (
-    <div className={`${styles.parallax} ${styles.filter}`}>
+    <section className={`${styles.parallax} ${styles.filter}`} id="landing">
       {isShowLoading && <Loading loading={loading} />}
       <Image
         src={
@@ -44,6 +44,6 @@ export const LandingBlock: React.FC<LandingBlockProps> = ({
           <div className={styles.line} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };

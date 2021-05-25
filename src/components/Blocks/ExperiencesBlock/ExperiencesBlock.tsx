@@ -6,7 +6,7 @@ import styles from "./ExperiencesBlock.module.css";
 
 export const ExperiencesBlock: React.FC = ({}) => {
   return (
-    <div className={styles.body}>
+    <section className={styles.body} id="experiences">
       <FadeInSection>
         <div className={styles.container}>
           <h2 className={styles.mainLine}>Experiences</h2>
@@ -35,6 +35,6 @@ export const ExperiencesBlock: React.FC = ({}) => {
           <SlashSpace />
         </div>
       </FadeInSection>
-    </div>
+    </section>
   );
 };

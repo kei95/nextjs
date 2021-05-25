@@ -4,13 +4,11 @@ import { FadeInSection } from "../../FadeInSection/FadeInSection";
 import { SlashSpace } from "../../SlashSpace/SlashSpace";
 import styles from "./GetInTouch.module.css";
 
-interface GetInTouchProps {}
-
-export const GetInTouch: React.FC<GetInTouchProps> = ({}) => {
+export const GetInTouch: React.FC = () => {
   return (
     <FadeInSection>
       <SlashSpace />
-      <div className={styles.container}>
+      <section className={styles.container} id="get-in-touch">
         <div className={styles.textsContainer}>
           <h2 className={styles.mainLine}>Get in touch</h2>
           <p className={styles.subLine}>
@@ -21,7 +19,7 @@ export const GetInTouch: React.FC<GetInTouchProps> = ({}) => {
           </p>
         </div>
         <EmailButton />
-      </div>
+      </section>
     </FadeInSection>
   );
 };

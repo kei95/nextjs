@@ -7,8 +7,8 @@ interface WorksBlockProps {}
 
 export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
   return (
-    <FadeInSection>
-      <div className={styles.container}>
+    <section className={styles.container} id="works">
+      <FadeInSection>
         <h2 className={styles.mainLine}>Works</h2>
         <Content
           title="Sherwa"
@@ -58,7 +58,7 @@ export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
           appLink={"https://web.base.town"}
           src={"/static/img/base.webp"}
         />
-      </div>
-    </FadeInSection>
+      </FadeInSection>
+    </section>
   );
 };

@@ -1,24 +1,29 @@
-import React, { MouseEvent } from "react";
+import React from "react";
+import { HashLink } from "react-router-hash-link";
+
+// icons
 import { faFile } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
+// style
 import styles from "./Header.module.css";
+
+// components
 import { Icon } from "./components/Icon";
 import { ThemeSwitch } from "./components/ThemeSwitch";
 
-interface HeaderProps {}
-
-export const Header: React.FC<HeaderProps> = ({}) => {
-  const onClickHeaderTitle = (event: MouseEvent) => {
-    event.preventDefault();
-    window.scrollTo(0, 0);
-  };
+export const Header: React.FC = () => {
   return (
     <div className={styles.container}>
       <div className={styles.innerContainer}>
-        <a onClick={onClickHeaderTitle} className={styles.iconText}>
+        <HashLink
+          smooth
+          to={"/#landing"}
+          // onClick={onClickHeaderTitle}
+          className={styles.iconText}
+        >
           Kei's portfolio
-        </a>
+        </HashLink>
         {/* right side */}
         <div>
           <Icon
