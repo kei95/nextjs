@@ -11,6 +11,16 @@ export const ExperiencesBlock: React.FC = ({}) => {
         <div className={styles.container}>
           <h2 className={styles.mainLine}>Experiences</h2>
           <ExperienceDetail
+            title="Generac Power Systems"
+            period="Apr 2021 - Now"
+            description="As a software developer, 
+      primary developing an app that allows a user to monitor his/her energy consumption and bill estimation."
+            list={[
+              "Implemented the app's new features with rich animations",
+              "Led the team to add tests to the project and reduced the rate of bug report",
+            ]}
+          />
+          <ExperienceDetail
             title="Sherwa Online Services"
             period="Oct 2019 - Apr 2021"
             description="Developed an app that is focused on helping gamers to match up and
