@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../../../WorksBlock.module.css";
-import { ContentDescriptionProps } from "../types/types";
+import { ContentDetailsProps } from "../types/types";
 import {
   faGithub,
   faAndroid,
@@ -12,7 +12,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import useDarkMode from "use-dark-mode";
 config.autoAddCss = false;
 
-export const ContentDetails: React.FC<ContentDescriptionProps> = ({
+export const ContentDetails: React.FC<ContentDetailsProps> = ({
   title,
   description,
   stacks,

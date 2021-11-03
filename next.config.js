@@ -6,3 +6,7 @@ const optimizedImages = require("next-optimized-images");
 module.exports = withImages();
 
 module.exports = withPlugins([[optimizedImages, {}]]);
+
+module.exports = {
+  swcMinify: true,
+};

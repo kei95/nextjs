@@ -4,7 +4,7 @@ import { Loading } from "../../Loading/Loading";
 import styles from "./LandingBlock.module.css";
 
 interface LandingBlockProps {
-  isMobile: boolean;
+  isMobile: boolean | string | undefined;
   loading: boolean;
 }
 

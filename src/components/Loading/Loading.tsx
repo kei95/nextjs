@@ -24,7 +24,7 @@ export const Loading: React.FC<LoadingProps> = ({ loading }) => {
       <div className={`fade-in-section ${showLogo ? "is-visible" : ""}`}>
         <div className={styles.innerBody}>
           <Image
-            src={require("../../../static/img/logo.png")}
+            src={require("../../../public/static/img/logo.png")}
             alt="logo"
             width={70}
             height={70}
