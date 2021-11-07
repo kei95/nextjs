@@ -3,7 +3,7 @@ import styles from "../../WorksBlock.module.css";
 import { ContentImage } from "./ContentImage/ContentImage";
 import { ContentDetails } from "./ContentDetails/ContentDetails";
 import { ContentDescriptionProps } from "./types/types";
-import { FadeInSection } from "../../../../FadeInSection/FadeInSection";
+import { FadeInSection } from "src/components/FadeInSection";
 
 export const Content: React.FC<ContentDescriptionProps> = ({
   title,

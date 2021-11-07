@@ -82,6 +82,10 @@ p {
   margin: 1rem 0;
 }
 
+ul {
+  font-family: "LibreBaskerville-Regular";
+}
+
 span {
   font-family: "LibreBaskerville-Regular";
   font-size: 0.9rem;

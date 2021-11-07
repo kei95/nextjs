@@ -1,5 +1,5 @@
 import React from "react";
-import { FadeInSection } from "../../FadeInSection/FadeInSection";
+import { FadeInSection } from "src/components/FadeInSection";
 import styles from "./WorksBlock.module.css";
 import { Content } from "./components/Content/Content";
 

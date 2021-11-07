@@ -1,5 +1,5 @@
 import React from "react";
-import { FadeInSection } from "../../FadeInSection/FadeInSection";
+import { FadeInSection } from "src/components/FadeInSection";
 import { SlashSpace } from "../../SlashSpace/SlashSpace";
 import { ExperienceDetail } from "./components/ExperienceDetail";
 import styles from "./ExperiencesBlock.module.css";

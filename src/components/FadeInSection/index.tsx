@@ -11,7 +11,10 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries: IntersectionObserverEntry[]) => {
-        entries.forEach((entry) => setVisible(entry.isIntersecting));
+        entries.forEach(
+          // Get it stay as true once it's toggled on
+          (entry) => entry.isIntersecting && setVisible(entry.isIntersecting)
+        );
       }
     );
 

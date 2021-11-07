@@ -8,6 +8,7 @@ import { AboutBlock } from "../../src/components/Blocks/AboutBlock/AboutBlock";
 import { ExperiencesBlock } from "../../src/components/Blocks/ExperiencesBlock/ExperiencesBlock";
 import { WorksBlock } from "../../src/components/Blocks/WorksBlock/WorksBlock";
 import { GetInTouch } from "../../src/components/Blocks/GetInTouch/GetInTouch";
+import VerticalNav from "../components/VerticalNav";
 
 interface MainPageProps {
   userAgent?: string;
@@ -38,12 +39,15 @@ export const MainPage: NextPage<MainPageProps> = ({ userAgent }) => {
       <Header />
       <LandingBlock loading={loading} isMobile={isMobile} />
       {!loading && (
-        <>
-          <AboutBlock />
-          <ExperiencesBlock />
-          <WorksBlock />
-          <GetInTouch />
-        </>
+        <div style={{ display: "flex", flexDirection: "row" }}>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <AboutBlock />
+            <ExperiencesBlock />
+            <WorksBlock />
+            <GetInTouch />
+          </div>
+          {/* <VerticalNav /> */}
+        </div>
       )}
     </div>
   );

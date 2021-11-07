@@ -1,6 +1,6 @@
 import React from "react";
-import { EmailButton } from "../../CustomButtons/EmailButton";
-import { FadeInSection } from "../../FadeInSection/FadeInSection";
+import { EmailButton } from "src/components/CustomButtons/EmailButton";
+import { FadeInSection } from "src/components/FadeInSection";
 import { SlashSpace } from "../../SlashSpace/SlashSpace";
 import styles from "./GetInTouch.module.css";
 
