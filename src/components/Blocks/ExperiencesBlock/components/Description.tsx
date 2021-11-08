@@ -44,11 +44,11 @@ export const Description = ({
   return (
     <>
       <p className={styles.workDescription}>{description}</p>
+      <ul className={styles.list}>{listItem}</ul>
       <ul className={styles.toolList}>
         <span className={styles.listTitle}>Tools:</span>
         {toolListItem}
       </ul>
-      <ul className={styles.list}>{listItem}</ul>
     </>
   );
 };

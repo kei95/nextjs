@@ -44,7 +44,8 @@
 }
 
 .listTitle {
-  font-size: 1rem;
+  font-family: "LibreBaskerville-Bold";
+  font-size: 0.9rem;
 }
 
 .workDescription {
@@ -67,4 +68,5 @@
 .toolListItem {
   display: inline;
   margin-left: 0.5rem;
+  font-size: 0.9rem;
 }
