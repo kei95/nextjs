@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 
 interface FadeInSectionProps {
-  children: JSX.Element;
+  children: JSX.Element[] | JSX.Element;
 }
 
 export const FadeInSection = ({
