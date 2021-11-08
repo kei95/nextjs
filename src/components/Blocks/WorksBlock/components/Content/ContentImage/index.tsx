@@ -3,11 +3,11 @@ import Image from "next/image";
 import styles from "../../../WorksBlock.module.css";
 import { ContentImageProps } from "../types/types";
 
-export const ContentImage: React.FC<ContentImageProps> = ({
+export const ContentImage = ({
   src,
   isLeft,
   appLink,
-}) => {
+}: ContentImageProps): JSX.Element => {
   return (
     <a
       target="_blank"

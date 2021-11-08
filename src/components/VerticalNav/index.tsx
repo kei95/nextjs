@@ -1,8 +1,6 @@
 import React from "react";
 
-interface indexProps {}
-
-const VerticalNav: React.FC<indexProps> = () => {
+const VerticalNav = (): JSX.Element => {
   return (
     <div style={{ width: "30vw" }}>
       <ul>

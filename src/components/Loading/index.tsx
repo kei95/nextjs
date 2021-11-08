@@ -6,7 +6,7 @@ interface LoadingProps {
   loading: boolean;
 }
 
-export const Loading: React.FC<LoadingProps> = ({ loading }) => {
+export const Loading = ({ loading }: LoadingProps): JSX.Element => {
   const [showLogo, setShowLogo] = useState(false);
 
   useEffect(() => {

@@ -1,10 +1,12 @@
 import React, { useRef, useState, useEffect } from "react";
 
 interface FadeInSectionProps {
-  children: JSX.Element[] | JSX.Element;
+  children: JSX.Element;
 }
 
-export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
+export const FadeInSection = ({
+  children,
+}: FadeInSectionProps): JSX.Element => {
   const domRef = useRef<HTMLDivElement | null>(null);
   const [isVisible, setVisible] = useState(false);
 

@@ -1,8 +1,6 @@
 import React from "react";
 
-interface worksProps {}
-
-const works: React.FC<worksProps> = ({}) => {
+const works = (): JSX.Element => {
   return <h1>Works page</h1>;
 };
 

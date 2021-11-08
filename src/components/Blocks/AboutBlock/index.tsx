@@ -1,11 +1,9 @@
 import React from "react";
 import { FadeInSection } from "src/components/FadeInSection";
-import { SlashSpace } from "../../SlashSpace/SlashSpace";
+import { SlashSpace } from "../../SlashSpace";
 import styles from "./AboutBlock.module.css";
 
-interface AboutBlockProps {}
-
-export const AboutBlock: React.FC<AboutBlockProps> = ({}) => {
+export const AboutBlock = ({}): JSX.Element => {
   return (
     <section className={styles.container} id="about">
       <FadeInSection>

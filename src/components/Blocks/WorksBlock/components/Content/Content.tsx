@@ -1,11 +1,11 @@
 import React from "react";
 import styles from "../../WorksBlock.module.css";
-import { ContentImage } from "./ContentImage/ContentImage";
+import { ContentImage } from "./ContentImage";
 import { ContentDetails } from "./ContentDetails/ContentDetails";
 import { ContentDescriptionProps } from "./types/types";
 import { FadeInSection } from "src/components/FadeInSection";
 
-export const Content: React.FC<ContentDescriptionProps> = ({
+export const Content = ({
   title,
   description,
   stacks,
@@ -16,7 +16,7 @@ export const Content: React.FC<ContentDescriptionProps> = ({
   androidLink,
   src,
   isLeft,
-}) => {
+}: ContentDescriptionProps): JSX.Element => {
   return (
     <FadeInSection>
       <div className={styles.workContainer}>

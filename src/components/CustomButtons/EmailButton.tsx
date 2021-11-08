@@ -2,9 +2,7 @@ import React from "react";
 import useDarkMode from "use-dark-mode";
 import styles from "./Button.module.css";
 
-interface EmailButtonProps {}
-
-export const EmailButton: React.FC<EmailButtonProps> = ({}) => {
+export const EmailButton = (): JSX.Element => {
   const isDarkMode = useDarkMode();
 
   return (

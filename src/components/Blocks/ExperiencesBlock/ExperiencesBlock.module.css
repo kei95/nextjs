@@ -1,5 +1,6 @@
 .body {
   width: 100%;
+  max-width: calc(750px - 32px);
 }
 
 .container {
@@ -42,12 +43,28 @@
   font-size: 1rem;
 }
 
+.listTitle {
+  font-size: 1rem;
+}
+
 .workDescription {
-  margin: 0.5rem 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .list {
   font-size: 0.9rem;
   margin: 0.5rem 0 0 0;
   padding-left: 20px;
+}
+
+.toolList {
+  display: inline;
+  margin-left: 0;
+  padding-left: 0;
+  align-items: center;
+}
+
+.toolListItem {
+  display: inline;
+  margin-left: 0.5rem;
 }

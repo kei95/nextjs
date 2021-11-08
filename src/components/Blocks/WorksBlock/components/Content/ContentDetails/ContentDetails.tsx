@@ -12,7 +12,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 import useDarkMode from "use-dark-mode";
 config.autoAddCss = false;
 
-export const ContentDetails: React.FC<ContentDetailsProps> = ({
+export const ContentDetails = ({
   title,
   description,
   stacks,
@@ -21,7 +21,7 @@ export const ContentDetails: React.FC<ContentDetailsProps> = ({
   iOSLink,
   androidLink,
   isLeft,
-}) => {
+}: ContentDetailsProps): JSX.Element => {
   const isDarkMode = useDarkMode();
   return (
     <div className={isLeft ? styles.contentLeft : styles.content}>

@@ -1,7 +1,7 @@
 import React from "react";
 import { EmailButton } from "src/components/CustomButtons/EmailButton";
 import { FadeInSection } from "src/components/FadeInSection";
-import { SlashSpace } from "../../SlashSpace/SlashSpace";
+import { SlashSpace } from "../../SlashSpace";
 import styles from "./GetInTouch.module.css";
 
 export const GetInTouch: React.FC = () => {

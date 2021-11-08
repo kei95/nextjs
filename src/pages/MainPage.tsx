@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { NextPage } from "next";
 
 // components
-import { Header } from "../../src/components/Header/Header";
-import { LandingBlock } from "../../src/components/Blocks/LandingBlock/LandingBlock";
-import { AboutBlock } from "../../src/components/Blocks/AboutBlock/AboutBlock";
-import { ExperiencesBlock } from "../../src/components/Blocks/ExperiencesBlock/ExperiencesBlock";
-import { WorksBlock } from "../../src/components/Blocks/WorksBlock/WorksBlock";
-import { GetInTouch } from "../../src/components/Blocks/GetInTouch/GetInTouch";
+import { Header } from "../components/Header";
+import { LandingBlock } from "../components/Blocks/LandingBlock";
+import { AboutBlock } from "../components/Blocks/AboutBlock";
+import { ExperiencesBlock } from "../components/Blocks/ExperiencesBlock";
+import { WorksBlock } from "../components/Blocks/WorksBlock";
+import { GetInTouch } from "../components/Blocks/GetInTouch";
 import VerticalNav from "../components/VerticalNav";
 
 interface MainPageProps {

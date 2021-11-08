@@ -113,20 +113,21 @@ span {
     margin: 2rem 0;
     max-width: calc(750px - 32px);
   }
+  ul {
+    max-width: calc(750px - 32px);
+  }
 }
 
 /* ============= Fade in section's css ============= */
 .fade-in-section {
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 1.2s ease-out;
-  will-change: opacity, visibility;
+  transition: opacity 0.8s ease-out;
+  will-change: opacity;
 }
 .fade-in-section.is-visible {
   opacity: 1;
-  visibility: visible;
-  transition: opacity 1.2s ease-in;
-  will-change: opacity, visibility;
+  transition: opacity 0.8s ease-in;
+  will-change: opacity;
 }
 /* ================================================= */
 

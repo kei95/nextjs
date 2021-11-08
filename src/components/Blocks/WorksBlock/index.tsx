@@ -3,9 +3,7 @@ import { FadeInSection } from "src/components/FadeInSection";
 import styles from "./WorksBlock.module.css";
 import { Content } from "./components/Content/Content";
 
-interface WorksBlockProps {}
-
-export const WorksBlock: React.FC<WorksBlockProps> = ({}) => {
+export const WorksBlock = (): JSX.Element => {
   return (
     <section className={styles.container} id="works">
       <FadeInSection>

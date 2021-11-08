@@ -4,9 +4,7 @@ import styles from "../Header.module.css";
 import useDarkMode from "use-dark-mode";
 import Switch from "react-switch";
 
-interface ThemeSwitchProps {}
-
-export const ThemeSwitch: React.FC<ThemeSwitchProps> = ({}) => {
+export const ThemeSwitch = (): JSX.Element => {
   const isDarkMode = useDarkMode();
 
   return (

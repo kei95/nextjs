@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import { Loading } from "../../Loading/Loading";
+import { Loading } from "../../Loading";
 import styles from "./LandingBlock.module.css";
 
 interface LandingBlockProps {
@@ -8,10 +8,10 @@ interface LandingBlockProps {
   loading: boolean;
 }
 
-export const LandingBlock: React.FC<LandingBlockProps> = ({
+export const LandingBlock = ({
   isMobile,
   loading,
-}) => {
+}: LandingBlockProps): JSX.Element => {
   const [isShowLoading, setIsShowLoading] = useState(true);
   useEffect(() => {
     if (!loading) {

@@ -6,7 +6,7 @@ interface TitleProps {
   period: string;
 }
 
-export const Title: React.FC<TitleProps> = ({ title, period }) => {
+export const Title = ({ title, period }: TitleProps): JSX.Element => {
   return (
     <div className={styles.titleContainer}>
       <p className={styles.title}>{title}</p>

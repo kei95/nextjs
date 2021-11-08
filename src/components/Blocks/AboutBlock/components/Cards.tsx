@@ -6,7 +6,7 @@ interface CardProps {
   paragraph: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, paragraph }) => {
+const Card = ({ title, paragraph }: CardProps): JSX.Element => {
   return (
     <div className={styles.cardContainer}>
       <h2 className={styles.titleText}>{title}</h2>

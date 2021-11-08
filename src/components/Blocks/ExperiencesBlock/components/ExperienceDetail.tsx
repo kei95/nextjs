@@ -7,17 +7,19 @@ interface ExperienceDetailProps {
   title: string;
   period: string;
   description: string;
+  tools: string[];
   list: string[];
   isLastItem?: boolean;
 }
 
-export const ExperienceDetail: React.FC<ExperienceDetailProps> = ({
+export const ExperienceDetail = ({
   title,
   period,
   description,
+  tools,
   list,
   isLastItem,
-}) => {
+}: ExperienceDetailProps): JSX.Element => {
   return (
     <div
       className={
@@ -27,7 +29,7 @@ export const ExperienceDetail: React.FC<ExperienceDetailProps> = ({
       }
     >
       <Title title={title} period={period} />
-      <Description description={description} list={list} />
+      <Description description={description} tools={tools} list={list} />
     </div>
   );
 };

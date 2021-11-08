@@ -10,7 +10,7 @@ interface IconProps {
   isLastIcon?: boolean;
 }
 
-export const Icon: React.FC<IconProps> = ({ icon, href, isLastIcon }) => {
+export const Icon = ({ icon, href, isLastIcon }: IconProps): JSX.Element => {
   return (
     <a
       target="_blank"
