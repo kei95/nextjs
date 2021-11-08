@@ -13,6 +13,7 @@ export const LandingBlock = ({
   loading,
 }: LandingBlockProps): JSX.Element => {
   const [isShowLoading, setIsShowLoading] = useState(true);
+
   useEffect(() => {
     if (!loading) {
       setTimeout(() => {

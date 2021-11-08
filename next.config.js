@@ -8,5 +8,5 @@ module.exports = withImages();
 module.exports = withPlugins([[optimizedImages, {}]]);
 
 module.exports = {
-  swcMinify: true,
+  swcMinify: false,
 };

@@ -31,7 +31,7 @@ export const MainPage: NextPage<MainPageProps> = ({ userAgent }) => {
         setLoading(false);
       }, 2000);
     };
-    showSplash();
+    loading && showSplash();
   }, []);
 
   return (
